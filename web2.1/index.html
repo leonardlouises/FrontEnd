@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Calculadora online</h1>
+            </header>
+            <input type="text" id="calculo" placeholder="introduce una operación">
+            <br>
+            <input type="text" id="resultado" placeholder="0" disabled>
+            <table>
+                <tr>
+                    <td><button type="button" value="1" onclick="escribir(1)">1</button></td>
+                    <td><button type="button" value="2" onclick="escribir(2)">2</button></td>
+                    <td><button type="button" value="3" onclick="escribir(3)">3</button></td>
+                    <td><button type="button" onclick="operacion('/')" class="operador">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="4" onclick="escribir(4)">4</button></td>
+                    <td><button type="button" value="5" onclick="escribir(5)">5</button></td>
+                    <td><button type="button" value="6" onclick="escribir(6)">6</button></td>
+                    <td><button type="button" onclick="operacion('*')" class="operador">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="7" onclick="escribir(7)">7</button></td>
+                    <td><button type="button" value="8" onclick="escribir(8)">8</button></td>
+                    <td><button type="button" value="9" onclick="escribir(9)">9</button></td>
+                    <td><button type="button" onclick="operacion('+')" class="operador">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="operador" onclick="escribir('.')">.</button></td>
+                    <td><button type="button" value="0" onclick="escribir(0)">0</button></td>
+                    <td><button type="button" onclick="operacion('-')" class="operador">-</button></td>
+                    <td><button type="button" id="res" onclick="operacion('=')" class="operador">=</button></td>
+                </tr>
+            </table>
+            <footer>
+                <button id="clear" type="button" onclick="limpiar()">Limpiar</button>
+            </footer>
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>

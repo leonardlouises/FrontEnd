@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    margin-top: 100px;
+}
+
+#find-me{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: rgb(40, 70, 240);
+    color: white;
+}
+
+#find-me:hover{
+    background-color: rgb(30, 60, 230);
+}
+
+#find-me:active{
+    background-color: rgb(10, 40, 210);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}

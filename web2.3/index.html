@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Conversión de monedas</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <header>
+                <h1>Tabla de cotización</h1>
+            </header>
+            <table>
+                <tr>
+                    <th>MONEDA</th>
+                    <th>COMPRA</th>
+                    <th>VENTA</th>
+                </tr>
+                <tr>
+                    <td>Dólar Americano</td>
+                    <td>7.400</td>
+                    <td>7.460</td>
+                </tr>
+                <tr>
+                    <td>Real Brasileño</td>
+                    <td>1.385</td>
+                    <td>1.440</td>
+                </tr>
+                <tr>
+                    <td>Peso Argentino</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </table>
+            <header class="final">
+                <h1>Conversor de monedas</h1>
+            </header>
+            <form>
+                <label for="inicial">De:</label>
+                <select id="inicial">
+                    <option value="7400">Dólar Estadounidense</option>
+                    <option value="1385">Real Brasileño</option>
+                    <option value="6">Peso Argentino</option>
+                    <option value="1">Guaraní Paraguayo</option>
+                </select>
+                <label for="final">A:</label>
+                <select id="final">
+                    <option value="7460">Dólar Estadounidense</option>
+                    <option value="1440">Real Brasileño</option>
+                    <option value="7">Peso Argentino</option>
+                    <option value="1">Guaraní Paraguayo</option>
+                </select>
+                <br>
+                <label for="cantidad">Cantidad:</label>
+                <input type="text" id="cantidad">
+                <br>
+                <button type="button" onclick="calcular()">Convertir</button>
+                <br>
+                <label for="resultado">Resultado:</label>
+                <p id="resultado"></p>
+            </form>
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>

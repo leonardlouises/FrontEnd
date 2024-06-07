@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <header>
+                <img src="" alt="">
+            </header>
+            <form id="formulario">
+                <label for="correo">Ingresa tu correo electrónico para registrarte o iniciar sesión.</label>
+                <br>
+                <input type="text" id="correo" placeholder="  Correo electrónico" onchange="validar_boton()" required>
+                <br>
+                <a href="#" class="confir">Reenviar instrucciones de confirmación</a>
+                <br>
+                <button id="ingresar" type="button" onclick="saludo()" disabled>Ingresar</button>
+                <br>
+                <label>O bien</label>
+                <br>
+                <div id="boton">
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&ifkv=AS5LTAR0BOmZ0FJ_2Hjz0cj_blQvAEWhiDuxM7SVRx1Bbfn46WjrcBxBtKQdByKE1wCcahNkxW5mPw&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-703952368%3A1717534125591537&ddm=0" class="google"><img src="images/google.png" width="20" height="auto"> Continuar con Google</a>
+                </div>
+            </form>
+            <footer>
+                <small>Desarrollado por Leonard</small>
+            </footer>
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>

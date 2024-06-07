@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Par o impar</title>
+    </head>
+    <body>
+        <h1>Comprobar si el número es par o impar</h1>
+        <script>
+            var numero = Number(prompt("intoduce un número"));
+
+            if(isNaN(numero)){
+                alert("Entrada invalida se epera un número");
+            }
+            else if(numero % 2 == 0){
+                alert("el número " + numero + " es par");
+            }
+            else{
+                alert("el número " + numero + " es impar");
+            }
+        </script>
+    </body>
+</html>
