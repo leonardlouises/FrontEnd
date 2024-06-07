@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;/* 1366 x 768*/
+    height: 100%;
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 910px;
+    height: 458px;
+    margin-left: 228px;
+    margin-top: 50px;
+    background-color: rgba(145, 145, 145, 0.5);
+    border-radius: 20px;
+    position: absolute;
+}
+
+.cabeza{
+    height: 80px;
+    background-color: rgb(30, 110, 50);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 4px 4px 2px gray;
+}
+
+form{
+    text-align: center;
+    padding: 20px;
+}
+
+input{
+    margin: 20px 5px;
+}
+
+.aceptar{
+    text-align: center;
+    padding: 20px;
+}
+
+#enviar{
+    padding: 5px;
+    background-color: rgb(30, 110, 50);
+    color: white;
+    border-radius: 20px;
+}
+
+footer{
+    padding: 10px;
+    height: 60px;
+    background-color: rgb(30, 110, 50);
+    margin-top: 31px;
+    border-radius: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 1365px){
+    body{
+        text-align: center;
+    }
+
+    .contenedor{
+        width: 60%;
+        margin: auto 20%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .contenedor{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}

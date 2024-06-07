@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tabla de productos</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="mx-5">
+            <header class="p-3 mb-2 bg-black text-white">
+                <h1>Gestión de productos</h1>
+            </header>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Agregar productos
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar productos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="text" class="ml-5">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="table table-borderless">
+                <h2>Lista de productos</h2>
+                <thead>
+                  <tr>
+                    <th scope="col">COD</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Zapato Free Fire</td>
+                    <td>Champions</td>
+                    <td>Gs. 350.000</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">ver</button>
+                      <button type="button" class="btn btn-outline-primary">editar</button>
+                      <button type="button" class="btn btn-outline-primary">eliminar</button>
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Zapato Free Fire</td>
+                    <td>Champions</td>
+                    <td>Gs. 350.000</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">ver</button>
+                      <button type="button" class="btn btn-outline-primary">editar</button>
+                      <button type="button" class="btn btn-outline-primary">eliminar</button>
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Zapato Free Fire</td>
+                    <td>Champions</td>
+                    <td>Gs. 350.000</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">ver</button>
+                      <button type="button" class="btn btn-outline-primary">editar</button>
+                      <button type="button" class="btn btn-outline-primary">eliminar</button>
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Zapato Free Fire</td>
+                    <td>Champions</td>
+                    <td>Gs. 350.000</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">ver</button>
+                      <button type="button" class="btn btn-outline-primary">editar</button>
+                      <button type="button" class="btn btn-outline-primary">eliminar</button>
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Zapato Free Fire</td>
+                    <td>Champions</td>
+                    <td>Gs. 350.000</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">ver</button>
+                      <button type="button" class="btn btn-outline-primary">editar</button>
+                      <button type="button" class="btn btn-outline-primary">eliminar</button>
+                    </div></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</html>
