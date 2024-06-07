@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(200, 200, 200);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.encabezado{
+    background-color: burlywood;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 1px gray;
+}
+
+.datos{
+    padding: 20px;
+}
+
+form{
+    margin: 20px;
+}
+
+legend{
+    margin: 8px;
+}
+
+.titulo{
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+#casilla{
+    margin-left: 10px;
+}
+
+.enlaze{
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+
+.enlaze:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+#boton{
+    text-align: center;
+}
+
+#aceptar{
+    margin: 10px;
+    padding: 5px;
+}
+
+#aceptar:hover{
+    background-color: rosybrown;
+}
+
+fieldset{
+    border-radius: 10px;
+}
+
+footer{
+    margin-left: 20px;
+}
