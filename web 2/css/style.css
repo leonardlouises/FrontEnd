@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(89, 168, 142);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+div{
+    padding: 20px;
+    text-align: center;
+}

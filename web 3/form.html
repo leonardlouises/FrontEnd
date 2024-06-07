@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>formulario</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario de registro</h1>
+        </header>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellidos" required><br>
+                <br>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input id="nacimiento" type="date" required>
+                <input type="number" placeholder="Edad" required><br>
+                <br>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <input type="radio" required>
+                <label>Hombre</label>
+                <input type="radio">
+                <label>Mujer</label><br>
+                <br>
+                <label for="ciudad">Ciudad</label>
+                <select id="ciudad">
+                    <option>Asunción</option>
+                    <option>F de la Mora</option>
+                    <option>Luque</option>
+                </select><br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos académicos</legend>
+                <label id="nivel">Nivel académico actual</label>
+                <select id="nivel">
+                    <option>Secundario</option>
+                    <option>Bachiller</option>
+                    <option>Universitario</option>
+                </select><br>
+                <br>
+                <textarea cols="54" rows="4" placeholder="Tus otros estudios y conocimientos"></textarea><br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos laborales</legend>
+                <textarea cols="54" rows="4" placeholder="Tus experiencias laborales"></textarea><br>
+                <br>
+                <label>Disponibilidad de tiempo</label>
+                <label for="mañana">Mañana</label>
+                <input type="checkbox" id="mañana">
+                <label for="tarde">Tarde</label>
+                <input type="checkbox" id="tarde">
+                <label for="noche">Noche</label>
+                <input type="checkbox" id="noche"><br>
+                <br>
+                <label for="aspiracion">Aspiración laboral</label>
+                <input type="range" id="aspiracion"><br>
+                <br>
+            </fieldset>
+            <input type="submit">
+        </form>
+        <footer>
+
+        </footer>
+    </body>
+</html>
