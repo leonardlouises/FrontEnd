@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: max-content;
+    height: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(200,200 ,200 );
+}
+
+.contenedor{
+    width: 1280px;
+    margin: 10px 30px;
+    padding: 5px;
+    text-align: left;
+}
+
+header{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    padding: 6px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu{
+    background-color: rgba(175, 52, 52);
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+li{
+    list-style: none;
+    margin: 0 5px;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+section{
+    background-color: white;
+    width: 1035px;
+    height: 1170px;
+    float: left;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+p{
+    text-align: justify;
+}
+
+figure{
+    text-align: center;
+}
+
+aside{
+    background-color: rgba(155, 82, 82);
+    width: 217px;
+    height: 428px;
+    float: right;
+    padding: 4px;
+    border-radius: 5px;
+    position: fixed;
+    right: 34px;
+}
+
+aside ul li{
+    margin: 5px;
+}
+
+article{
+    margin: 14px;
+    margin-bottom: 30px;
+
+}
+
+h3{
+    margin: 10px 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#sp{
+    text-align: right;
+}
+
+footer, br{
+    clear: both;
+}
+
+footer{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+#reg{
+    display: inline-block;
+}
+
+input, button{
+    margin: 5px;
+    padding: 4px;
+    border-style: hidden;
+    border-radius: 5px;
+}
+
+button{
+    background-color: brown;
+    color: white;
+}
+
+small{
+    color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 480px;
+    }
+
+    .contenedor{
+        width: 476px;
+        margin: 2px;
+    }
+
+    section{
+        float: none;
+        margin: 0;
+        width: 476px;
+        height: 1570px;
+    }
+
+    aside{
+        display: none;
+    }
+}

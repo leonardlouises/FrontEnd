@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Examen final</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <header>
+                <h1>Método CFOP</h1>
+            </header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="https://es.wikipedia.org/wiki/M%C3%A9todo_CFOP" target="_blank">Wiki</a></li>
+                    <li><a href="https://www.myrubik.com/cfopcomplet3x3x3.php?lang=es" target="_blank">Fridrich completo</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article id="intro">
+                    <h3>Introducción</h3>
+                    <p>
+                        El método CFOP (Cruz - F2L - Orientación de la última capa - Permutación de la última capa), 
+                        también conocido como método de Fridrich, es uno de los métodos más usados para resolver 
+                        cubos de Rubik 3x3x3 en speedcubing. Fue desarrollado en los primeros años de la década de
+                         los 80, gracias a la combinación de varias innovaciones propuestas por speedcubers.
+                          Comúnmente, se le acredita la popularización de este método a Jessica Fridrich, una
+                           speedcuber checa que lo publicó en su página web en 1997.<br>
+                        <br>
+                        Es un método que utiliza el sistema de capa por capa: primero resolviendo una cruz, luego 
+                        implementando pares de esquinas y aristas a ella (F2L), orientando la última capa (OLL) y
+                         finalmente, permutándola (PLL). Estos dos últimos pasos son realizados a través de 
+                         algoritmos para ayudar a agilizar la resolución, mientras que los dos primeros se pueden 
+                         hacer de forma intuitiva.
+                    </p>
+                </article>
+                <article id="cruz">
+                    <h3>Crúz</h3>
+                    <p>
+                        La primera etapa implica resolver cuatro aristas con un color en común, uniéndolas con su 
+                        centro correspondiente y formando una cruz. Muchos speedcubers resuelven esta cruz en la 
+                        capa de abajo para evitar rotaciones y obtener una mejor vista de las piezas más
+                         importantes que serán utilizadas en posteriores pasos.
+                    </p>
+                    <figure>
+                        <img src="images/cruz.png" width="150" height="auto">
+                    </figure>
+                </article>
+                <article id="f2l">
+                    <h3>F2L</h3>
+                    <p>
+                        En este paso, las piezas de esquinas y aristas que forman las dos primeras capas se unen 
+                        y se insertan en la cruz, colocándolas en su sitio correcto. Hay 42 casos de combinación 
+                        de esquinas y aristas y sus respectivas soluciones, aunque también se puede hacer 
+                        intuitivamente.
+                    </p>
+                    <figure>
+                        <img src="images/f2l.png" width="150" height="auto">
+                    </figure>
+                </article>
+                <article id="oll">
+                    <h3>OLL</h3>
+                    <p>
+                        En este paso, se manipula la capa de arriba de manera que, al ejecutar el algoritmo 
+                        correspondiente entre los 57 que hay, todas las piezas tendrán un mismo color en común 
+                        colocado hacia arriba, aunque estén mal colocadas. Hay una versión simplificada de este 
+                        paso, que primero orienta todas las aristas y luego las esquinas, utilizando sólo 10 
+                        algoritmos.
+                    </p>
+                    <figure>
+                        <img src="images/oll.png" width="150" height="auto">
+                    </figure>
+                </article>
+                <article id="pll">
+                    <h3>PLL</h3>
+                    <p>
+                        la última etapa resuelve las piezas que anteriormente hemos orientado, poniéndolas en 
+                        su lugar correspondiente. Hay un total de 21 algoritmos para este paso. Se identifican 
+                        mediante letras, muchas veces puestas por cómo las flechas que indican las piezas que se 
+                        mueven las forman, como por ejemplo, la permutación T. La versión simplificada utiliza 6 
+                        algoritmos para primero resolver las esquinas y luego las aristas.
+                    </p>
+                </article>
+                <div id="sp" onclick="fecha()">
+                    <span id="fecha">Mostrar fecha</span>
+                </div>  
+            </section>
+            <aside>
+                <h4>Tabla de contenidos</h4>
+                <ul>
+                    <li><a href="#intro">Introducción</a></li>
+                    <li><a href="#cruz">Crúz</a></li>
+                    <li><a href="#f2l">F2L</a></li>
+                    <li><a href="#oll">OLL</a></li>
+                    <li><a href="#pll">PLL</a></li>
+                </ul>
+            </aside>
+            <br>
+            <footer>
+                <form>
+                    <p id="reg">Registrate para enterarte de más novedades:</p>
+                    <input type="text" placeholder="Nombre" id="nombre" required>
+                    <input type="text" placeholder="Apellido" id="apellido" required>
+                    <button type="button" id="boton">Acceder</button>
+                </form>
+                <hr>
+                <small>Desarrollado por Leonard</small>
+            </footer>
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>
