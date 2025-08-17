@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.grid-content{
+    display: grid;
+    gap: min(20px, 5vw);
+    width: 80vw;
+    max-width: 1200px;
+    grid-template-columns: repeat(4, minmax(50px, 200px));
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    transform-style: preserve-3d;
+    transition: transform 1s, opacity .8s ease;
+    perspective: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.flip{
+        transform: rotateY(-180deg);
+    }
+
+    &.hide{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    backface-visibility: hidden;
+}
+
+.front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card .back{
+    transform: rotateY(180deg);
+}
+
+h3, .app-btn{
+    font-size: clamp(.5rem, calc(2vw + 1rem), 2rem);
+}
+
+.app-btn{
+    border: none;
+    background-color: #09f;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:focus-visible{
+        outline: none;
+    }
+
+    &:active{
+        opacity: .7;
+    }
+}
+
+.back .card-item{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: inherit;
+    
+    & span{
+        font-size: 1rem;
+    }
+}
+
+.game-over-modal{
+    max-width: 80vw;
+    padding: 10px 20px;
+    margin: 200px auto;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    animation: modal-animation-in .5s forwards;
+
+    & h3{
+        margin-bottom: 10px;
+    }
+    &::backdrop{
+        background-color: #0000008e;
+        animation: background-modal-animation-in .5s forwards;
+    }
+
+    &.closing{
+        animation: modal-animation-out .5s forwards;
+    }
+
+    &.closing::backdrop{
+        animation: background-modal-animation-out .5s forwards;
+    }
+}
+
+@keyframes modal-animation-in{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes modal-animation-out{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes background-modal-animation-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes background-modal-animation-out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
